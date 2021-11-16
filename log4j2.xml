@@ -15,7 +15,7 @@
             <SizeBasedTriggeringPolicy size="10 MB"/>
             <DefaultRolloverStrategy max="10"/>
         </RollingFile>
-    <Console name="Console" target="SYSTEM_OUT">
+    <Console name="Console2" target="SYSTEM_OUT">
       <PatternLayout pattern="CONSOLE %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
     </Console>
     </Appenders>
@@ -30,7 +30,7 @@
         <AsyncLogger name="org.mule.runtime.core.internal.processor.LoggerMessageProcessor" level="INFO"/>
 
         <AsyncRoot level="INFO">
-            <AppenderRef ref="Console"/>
+            <AppenderRef ref="Console2"/>
         </AsyncRoot>
     </Loggers>
 
